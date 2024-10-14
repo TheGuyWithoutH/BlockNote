@@ -227,10 +227,7 @@ function dragStart<
     const selectedSlice = view.state.selection.content();
     const schema = editor._tiptapEditor.schema;
 
-    const internalHTMLSerializer = createInternalHTMLSerializer(schema, editor);
-    const internalHTML = internalHTMLSerializer.serializeProseMirrorFragment(
-      selectedSlice.content
-    );
+    const internalHTML = "";
 
     const externalHTMLExporter = createExternalHTMLExporter(schema, editor);
     const externalHTML = externalHTMLExporter.exportProseMirrorFragment(
